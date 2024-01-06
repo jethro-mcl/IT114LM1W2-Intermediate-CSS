@@ -21,12 +21,22 @@ a different color when the screen is smaller than 500px*/
 .change-color {
   background-color: red;
 }
+@media (max-width: 500px){
+  .change-color {
+    background-color: teal;
+  }
+}
 
 /* Todo 2.1: Define and apply CSS styles such that the layout of .change-layout becomes a column
 when the screen's width is smaller than 500px */
 .change-layout {
   display: flex;
   flex-direction: row;
+}
+@media (max-width: 500px){
+  .change-layout {
+    flex-direction: column;
+  }
 }
 
 /* Todo 2.2: Define the common breakpoints for the following devices - phone, tablet, small screens (laptop), and large screens (desktops).
@@ -37,3 +47,24 @@ For each break point, the background of .common-breakpoints must change. You may
   height: 300px;
   background-color: blue;
 }
+@media (min-width: 375px) {
+  .common-breakpoints {
+    background-color: green;
+  }
+}
+@media (min-width: 768px) {
+  .common-breakpoints {
+    background-color: pink;
+  }
+}
+@media (min-width: 1024px) {
+  .common-breakpoints {
+    background-color: teal;
+  }
+}
+@media (min-width: 1440px) {
+  .common-breakpoints {
+    background-color: gold;
+  }
+}
+
